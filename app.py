@@ -74,8 +74,8 @@ if file:
         df["Std Qty"] = df[qty]
 
         # ANALYSIS
-        top_exporter = df.groupby("EXPORTER NAME")["USD Price"].sum().nlargest(5)
-        top_consignee = df.groupby("CONSIGNEE NAME")["USD Price"].sum().nlargest(5)
+        top_exporter = df.groupby("EXPORTER")["USD Price"].sum().nlargest(5)
+        top_consignee = df.groupby("CONSIGNEE")["USD Price"].sum().nlargest(5)
         top_country = df.groupby("COUNTRY")["USD Price"].sum().nlargest(5)
 
         # CREATE EXCEL
