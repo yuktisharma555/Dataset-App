@@ -47,9 +47,9 @@ if file:
                         return c
             return None
 
-        desc = find(["DESCRIPTION"])
+        desc = find(["GOODS DESCRIPTION"])
         qty = find(["QTY","QUANTITY"])
-        price = find(["PRICE"])
+        price = find(["ITEM PRICE_INV"])
         curr = find(["CURR","CURRENCY"])
         unit = find(["UNIT"])
         exporter = find(["EXPORTER"])
